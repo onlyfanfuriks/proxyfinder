@@ -8,7 +8,7 @@ API Reference
 Broker
 ------
 
-.. autoclass:: proxybroker.api.Broker
+.. autoclass:: proxyfinder.api.Broker
     :members: grab, find, serve, stop, show_stats
 
 
@@ -17,7 +17,7 @@ Broker
 Proxy
 -----
 
-.. autoclass:: proxybroker.proxy.Proxy
+.. autoclass:: proxyfinder.proxy.Proxy
     :members: create, types, is_working, avg_resp_time, geo, error_rate, get_log
     :member-order: groupwise
 
@@ -27,6 +27,6 @@ Proxy
 Provider
 --------
 
-.. autoclass:: proxybroker.providers.Provider
+.. autoclass:: proxyfinder.providers.Provider
     :members: proxies, get_proxies
     :member-order: groupwise

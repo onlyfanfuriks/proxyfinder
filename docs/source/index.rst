@@ -1,25 +1,25 @@
-.. proxybroker documentation master file, created by
+.. proxyfinder documentation master file, created by
    sphinx-quickstart on Thu May 26 13:04:40 2016.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-ProxyBroker
+ProxyFinder
 ===========
 
 [Finder | Checker | Server]
 
-.. image:: https://img.shields.io/pypi/v/proxybroker.svg?style=flat-square
-    :target: https://pypi.python.org/pypi/proxybroker/
-.. image:: https://img.shields.io/travis/constverum/ProxyBroker.svg?style=flat-square
-    :target: https://travis-ci.org/constverum/ProxyBroker
-.. image:: https://img.shields.io/pypi/wheel/proxybroker.svg?style=flat-square
-    :target: https://pypi.python.org/pypi/proxybroker/
-.. image:: https://img.shields.io/pypi/pyversions/proxybroker.svg?style=flat-square
-    :target: https://pypi.python.org/pypi/proxybroker/
-.. image:: https://img.shields.io/pypi/l/proxybroker.svg?style=flat-square
-    :target: https://pypi.python.org/pypi/proxybroker/
+.. image:: https://img.shields.io/pypi/v/proxyfinder.svg?style=flat-square
+    :target: https://pypi.python.org/pypi/proxyfinder/
+.. image:: https://img.shields.io/travis/constverum/ProxyFinder.svg?style=flat-square
+    :target: https://travis-ci.org/constverum/ProxyFinder
+.. image:: https://img.shields.io/pypi/wheel/proxyfinder.svg?style=flat-square
+    :target: https://pypi.python.org/pypi/proxyfinder/
+.. image:: https://img.shields.io/pypi/pyversions/proxyfinder.svg?style=flat-square
+    :target: https://pypi.python.org/pypi/proxyfinder/
+.. image:: https://img.shields.io/pypi/l/proxyfinder.svg?style=flat-square
+    :target: https://pypi.python.org/pypi/proxyfinder/
 
-ProxyBroker is an open source tool that asynchronously finds public proxies from multiple sources and concurrently checks them.
+ProxyFinder is an open source tool that asynchronously finds public proxies from multiple sources and concurrently checks them.
 
 .. image:: _static/index_find_example.gif
 
@@ -53,13 +53,13 @@ To install last stable release from pypi:
 
 .. code-block:: bash
 
-    $ pip install proxybroker
+    $ pip install proxyfinder
 
 The latest development version can be installed directly from GitHub:
 
 .. code-block:: bash
 
-    $ pip install -U git+https://github.com/constverum/ProxyBroker.git
+    $ pip install -U git+https://github.com/constverum/ProxyFinder.git
 
 
 Usage
@@ -77,7 +77,7 @@ Find and show 10 HTTP(S) proxies from United States with the high level of anony
 
 .. code-block:: bash
 
-    $ proxybroker find --types HTTP HTTPS --lvl High --countries US --strict -l 10
+    $ proxyfinder find --types HTTP HTTPS --lvl High --countries US --strict -l 10
 
 .. image:: _static/cli_find_example.gif
 
@@ -89,7 +89,7 @@ Find and save to a file 10 US proxies (without a check):
 
 .. code-block:: bash
 
-    $ proxybroker grab --countries US --limit 10 --outfile ./proxies.txt
+    $ proxyfinder grab --countries US --limit 10 --outfile ./proxies.txt
 
 .. image:: _static/cli_grab_example.gif
 
@@ -102,16 +102,16 @@ of found HTTP(S) proxies with the high level of anonymity:
 
 .. code-block:: bash
 
-    $ proxybroker serve --host 127.0.0.1 --port 8888 --types HTTP HTTPS --lvl High
+    $ proxyfinder serve --host 127.0.0.1 --port 8888 --types HTTP HTTPS --lvl High
 
 
 .. image:: _static/cli_serve_example.gif
 
 .. note::
 
-    Run ``proxybroker --help`` for more information on the options available.
+    Run ``proxyfinder --help`` for more information on the options available.
 
-    Run ``proxybroker <command> --help`` for more information on a command.
+    Run ``proxyfinder <command> --help`` for more information on a command.
 
 
 Basic code example
@@ -140,7 +140,7 @@ TODO
 Contributing
 ------------
 
-* Fork it: https://github.com/constverum/ProxyBroker/fork
+* Fork it: https://github.com/constverum/ProxyFinder/fork
 * Create your feature branch: git checkout -b my-new-feature
 * Commit your changes: git commit -am 'Add some feature'
 * Push to the branch: git push origin my-new-feature

@@ -159,8 +159,8 @@ def test_log(log):
         assert len(p.stat['errors']) == 0
         assert p._runtimes == []
         assert cm.output == [
-            'DEBUG:proxybroker:127.0.0.1:80 [INFO]: MSG; Runtime: 0.00',
-            'DEBUG:proxybroker:127.0.0.1:80 [HTTP]: MSG; Runtime: 0.00',
+            'DEBUG:proxyfinder:127.0.0.1:80 [INFO]: MSG; Runtime: 0.00',
+            'DEBUG:proxyfinder:127.0.0.1:80 [HTTP]: MSG; Runtime: 0.00',
         ]
 
     p.log(msg, stime, err)

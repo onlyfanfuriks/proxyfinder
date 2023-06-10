@@ -5,7 +5,7 @@ from setuptools import setup
 
 # https://packaging.python.org/en/latest/distributing/
 
-with codecs.open('proxybroker/__init__.py', mode='r', encoding='utf-8') as f:
+with codecs.open('proxyfinder/__init__.py', mode='r', encoding='utf-8') as f:
     INFO = dict(re.findall(r"__(\w+)__ = '([^']+)'", f.read(), re.MULTILINE))
 
 with codecs.open('README.md', mode='r', encoding='utf-8') as f:
@@ -30,7 +30,7 @@ TEST_REQUIRES = [
     'pytest-flake8>=1.0',
     'pytest-mock>=1.10.1',
 ]
-PACKAGES = ['proxybroker', 'proxybroker.data']
+PACKAGES = ['proxyfinder', 'proxyfinder.data']
 PACKAGE_DATA = {'': ['LICENSE'], INFO['package']: ['data/*.mmdb']}
 
 setup(
@@ -49,7 +49,7 @@ setup(
     package_data=PACKAGE_DATA,
     platforms='any',
     python_requires='>=3.5.3',
-    entry_points={'console_scripts': ['proxybroker = proxybroker.cli:cli']},
+    entry_points={'console_scripts': ['proxyfinder = proxyfinder.cli:cli']},
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Environment :: Console',

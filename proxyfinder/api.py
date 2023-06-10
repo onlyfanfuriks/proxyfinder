@@ -35,10 +35,10 @@ class Broker:
         (optional) The maximum number of attempts to check a proxy
     :param list judges:
         (optional) Urls of pages that show HTTP headers and IP address.
-        Or :class:`~proxybroker.judge.Judge` objects
+        Or :class:`~proxyfinder.judge.Judge` objects
     :param list providers:
         (optional) Urls of pages where to find proxies.
-        Or :class:`~proxybroker.providers.Provider` objects
+        Or :class:`~proxyfinder.providers.Provider` objects
     :param bool verify_ssl:
         (optional) Flag indicating whether to check the SSL certificates.
         Set to True to check ssl certifications
@@ -119,7 +119,7 @@ class Broker:
                                where should be located proxies
         :param int limit: (optional) The maximum number of proxies
 
-        :ref:`Example of usage <proxybroker-examples-grab>`.
+        :ref:`Example of usage <proxyfinder-examples-grab>`.
         """
         self._countries = countries
         self._limit = limit
@@ -140,7 +140,7 @@ class Broker:
     ):
         """Gather and check proxies from providers or from a passed data.
 
-        :ref:`Example of usage <proxybroker-examples-find>`.
+        :ref:`Example of usage <proxyfinder-examples-find>`.
 
         :param list types:
             Types (protocols) that need to be check on support by proxy.
@@ -215,7 +215,7 @@ class Broker:
         parameters of the :meth:`.find` method and passed it to gather proxies
         to a pool.
 
-        :ref:`Example of usage <proxybroker-examples-server>`.
+        :ref:`Example of usage <proxyfinder-examples-server>`.
 
         :param str host: (optional) Host of local proxy server
         :param int port: (optional) Port of local proxy server

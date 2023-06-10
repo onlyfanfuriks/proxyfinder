@@ -38,10 +38,10 @@ jobs:
           else
             PATH_SEPARATOR=":"
           fi
-          pyinstaller --onefile --name proxybroker-${RUNNER_OS}-$(arch) --add-data "../proxybroker/data${PATH_SEPARATOR}data" --workpath ./tmp --distpath . --clean ../py2exe_entrypoint.py;
+          pyinstaller --onefile --name proxyfinder-${RUNNER_OS}-$(arch) --add-data "../proxyfinder/data${PATH_SEPARATOR}data" --workpath ./tmp --distpath . --clean ../py2exe_entrypoint.py;
           rm -rf tmp *.spec;
-      - name: Archive proxybroker artifact
+      - name: Archive proxyfinder artifact
         uses: actions/upload-artifact@v3
         with:
-          name: proxybroker-build-artifacts
-          path: build/proxybroker-*-*
+          name: proxyfinder-build-artifacts
+          path: build/proxyfinder-*-*

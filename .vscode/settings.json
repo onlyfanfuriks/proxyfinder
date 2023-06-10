@@ -6,7 +6,7 @@
                 "asyncio",
                 "gunicorn",
                 "maxminddb",
-                "proxybroker",
+                "proxyfinder",
                 "proxycontrol",
                 "Referer"
         ],

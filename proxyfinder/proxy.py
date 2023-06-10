@@ -49,7 +49,7 @@ class Proxy:
             (optional) Keyword arguments that :class:`Proxy` takes
 
         :return: :class:`Proxy` object
-        :rtype: proxybroker.Proxy
+        :rtype: proxyfinder.Proxy
 
         :raises ResolveError: If could not resolve the host
         :raises ValueError: If the port > 65535

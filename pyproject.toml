@@ -4,12 +4,12 @@ version = "0.0.1-alpha1"
 description = "New proxy finder and checker. Fork of https://github.com/bluet/proxybroker2"
 authors = ["Alexander Bokanov <overhead.nerves@hmail.com>"]
 repository = "https://github.com/onlyfanfuriks/proxyfinder"
-# homepage = "http://proxybroker.readthedocs.io/"
-# documentation = "http://proxybroker.readthedocs.io/"
+# homepage = "http://proxyfinder.readthedocs.io/"
+# documentation = "http://proxyfinder.readthedocs.io/"
 license = "Apache-2.0"
 readme = "README.md"
 packages = []
-include = ["proxybroker/data/*.mmdb"]
+include = ["proxyfinder/data/*.mmdb"]
 classifiers = [
     'Development Status :: 3 - Alpha',
     'Environment :: Console',
@@ -53,7 +53,7 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-proxybroker = "proxybroker.cli:cli"
+proxyfinder = "proxyfinder.cli:cli"
 
 [tool.black]
 target-version = ['py310']

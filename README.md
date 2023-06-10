@@ -1,7 +1,7 @@
 *Porting to Python3.10+ is painful and the progress is moving slowly.*  
 *We need more volunteers to join. PRs welcome! :joy:*
 
-ProxyBroker
+ProxyFinder
 ===========
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
@@ -16,9 +16,9 @@ ProxyBroker
 [![GitHub license](https://img.shields.io/github/license/bluet/proxybroker2)](https://github.com/bluet/proxybroker2/blob/master/LICENSE)
 [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fbluet%2Fproxybroker2)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fbluet%2Fproxybroker2)
 
-ProxyBroker is an open source tool that asynchronously finds public proxies from multiple sources and concurrently checks them.
+ProxyFinder is an open source tool that asynchronously finds public proxies from multiple sources and concurrently checks them.
 
-![image](https://raw.githubusercontent.com/constverum/ProxyBroker/master/docs/source/_static/index_find_example.gif)
+![image](https://raw.githubusercontent.com/constverum/ProxyFinder/master/docs/source/_static/index_find_example.gif)
 
 Features
 --------
@@ -93,7 +93,7 @@ Installation
 ### Install locally
 
 To install last stable release from pypi:
-> NOT RECOMMEND. It will install the out-dated original proxybroker package, which is no longer maintained by original maintainer. [https://github.com/constverum/ProxyBroker](https://github.com/constverum/ProxyBroker/issues/195)
+> NOT RECOMMEND. It will install the out-dated original proxybroker package, which is no longer maintained by original maintainer. [https://github.com/constverum/ProxyFinder](https://github.com/constverum/ProxyFinder/issues/195)
 > We will upload the up-to-date package under new name (proxybroker2) when the support for 3.10 is ready. [https://github.com/bluet/proxybroker2/issues/89](https://github.com/bluet/proxybroker2/issues/89)
 
 ``` {.sourceCode .bash}
@@ -152,7 +152,7 @@ Find and show 10 HTTP(S) proxies from United States with the high level of anony
 $ proxybroker find --types HTTP HTTPS --lvl High --countries US --strict -l 10
 ```
 
-![image](https://raw.githubusercontent.com/constverum/ProxyBroker/master/docs/source/_static/cli_find_example.gif)
+![image](https://raw.githubusercontent.com/constverum/ProxyFinder/master/docs/source/_static/cli_find_example.gif)
 
 #### Grab
 
@@ -162,7 +162,7 @@ Find and save to a file 10 US proxies (without a check):
 $ proxybroker grab --countries US --limit 10 --outfile ./proxies.txt
 ```
 
-![image](https://raw.githubusercontent.com/constverum/ProxyBroker/master/docs/source/_static/cli_grab_example.gif)
+![image](https://raw.githubusercontent.com/constverum/ProxyFinder/master/docs/source/_static/cli_grab_example.gif)
 
 #### Serve
 
@@ -172,7 +172,7 @@ Run a local proxy server that distributes incoming requests to a pool of found H
 $ proxybroker serve --host 127.0.0.1 --port 8888 --types HTTP HTTPS --lvl High --min-queue 5
 ```
 
-![image](https://raw.githubusercontent.com/constverum/ProxyBroker/master/docs/source/_static/cli_serve_example.gif)
+![image](https://raw.githubusercontent.com/constverum/ProxyFinder/master/docs/source/_static/cli_serve_example.gif)
 
 Run `proxybroker --help` for more information on the options available.
 Run `proxybroker <command> --help` for more information on a command.
@@ -399,7 +399,7 @@ Licensed under the Apache License, Version 2.0
 Refs
 ----
 
--   <https://github.com/constverum/ProxyBroker/pull/161>
+-   <https://github.com/constverum/ProxyFinder/pull/161>
 
 ## Contributors ✨
 

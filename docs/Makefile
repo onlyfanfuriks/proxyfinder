@@ -94,9 +94,9 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/proxybroker.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/proxyfinder.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/proxybroker.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/proxyfinder.qhc"
 
 .PHONY: applehelp
 applehelp:
@@ -113,8 +113,8 @@ devhelp:
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/proxybroker"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/proxybroker"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/proxyfinder"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/proxyfinder"
 	@echo "# devhelp"
 
 .PHONY: epub
