@@ -2,7 +2,7 @@
 
 import asyncio
 
-from proxybroker import Broker
+from proxyfinder import Broker
 
 
 async def show(proxies):

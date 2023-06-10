@@ -3,10 +3,10 @@ from asyncio.streams import StreamReader
 
 import pytest
 
-from proxybroker import Proxy
-from proxybroker.errors import ProxyConnError, ProxyTimeoutError, ResolveError
-from proxybroker.negotiators import HttpsNgtr
-from proxybroker.utils import log as logger
+from proxyfinder import Proxy
+from proxyfinder.errors import ProxyConnError, ProxyTimeoutError, ResolveError
+from proxyfinder.negotiators import HttpsNgtr
+from proxyfinder.utils import log as logger
 
 from .utils import ResolveResult, future_iter
 

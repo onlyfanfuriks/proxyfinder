@@ -2,8 +2,8 @@ import socket
 
 import pytest
 
-from proxybroker.errors import ResolveError
-from proxybroker.resolver import Resolver
+from proxyfinder.errors import ResolveError
+from proxyfinder.resolver import Resolver
 
 from .utils import ResolveResult, future_iter
 

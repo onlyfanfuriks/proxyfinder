@@ -2,9 +2,9 @@ from unittest.mock import call
 
 import pytest
 
-from proxybroker import Proxy
-from proxybroker.errors import BadResponseError, BadStatusError
-from proxybroker.negotiators import _CONNECT_request
+from proxyfinder import Proxy
+from proxyfinder.errors import BadResponseError, BadStatusError
+from proxyfinder.negotiators import _CONNECT_request
 
 from .utils import future_iter
 

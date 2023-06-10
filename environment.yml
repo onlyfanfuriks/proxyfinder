@@ -1,4 +1,4 @@
-name: py36
+name: py310
 dependencies:
 - pip=9.0.1=py36_1
 - python=3.6.2=0
@@ -6,7 +6,7 @@ dependencies:
 - wheel=0.29.0=py36_0
 - pip:
   - sphinx
-  - alabaster
+  - sphinx_immaterial
   - aiohttp
   - aiodns
   - maxminddb

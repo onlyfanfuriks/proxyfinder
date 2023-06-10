@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# proxybroker documentation build configuration file, created by
+# proxyfinder documentation build configuration file, created by
 # sphinx-quickstart on Thu May 26 13:04:40 2016.
 #
 # This file is execfile()d with the current directory set to its
@@ -18,8 +18,6 @@ import os
 import re
 import sys
 
-import alabaster
-
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
@@ -31,7 +29,7 @@ sys.path.insert(0, os.path.abspath('.'))
 
 _docs_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 _path_to_init = os.path.abspath(
-    os.path.join(_docs_path, '..', 'proxybroker', '__init__.py')
+    os.path.join(_docs_path, '..', 'proxyfinder', '__init__.py')
 )
 with codecs.open(_path_to_init, mode='r', encoding='utf-8') as f:
     _INFO = dict(re.findall(r"__(\w+)__ = '([^']+)'", f.read(), re.MULTILINE))
@@ -46,7 +44,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.todo',
     'sphinx.ext.viewcode',
-    'alabaster',
+    'sphinx_immaterial',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -130,23 +128,22 @@ todo_include_todos = True
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 # html_theme = 'sphinx_rtd_theme'
-html_theme = 'alabaster'
+html_theme = "sphinx_immaterial"
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'logo': 'anonymous-128-icon.png',
-    'description': 'Proxy: find>check>serve',
-    'github_user': 'constverum',
-    'github_repo': 'ProxyBroker',
+    'logo': 'icon-128.png',
+    'description': 'Simple proxy finder',
+    'github_user': 'onlyfanfuriks',
+    'github_repo': 'ProxyFinder',
     'github_button': True,
     'github_banner': True,
-    'analytics_id': 'UA-78523784-1',
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = [alabaster.get_path()]
+# html_theme_path = [alabaster.get_path()]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -162,7 +159,7 @@ html_theme_path = [alabaster.get_path()]
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
-html_favicon = '_static/anonymous-16-icon.ico'
+html_favicon = '_static/icon-16.ico'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -230,7 +227,7 @@ html_sidebars = {'**': ['about.html', 'navigation.html', 'searchbox.html']}
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'proxybrokerdoc'
+htmlhelp_basename = 'proxyfinderdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -248,15 +245,15 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-    (
-        master_doc,
-        'proxybroker.tex',
-        'ProxyBroker Documentation',
-        'Constverum',
-        'manual',
-    )
-]
+# latex_documents = [
+#     (
+#         master_doc,
+#         'proxyfinder.tex',
+#         'ProxyFinder Documentation',
+#         'Username',
+#         'manual',
+#     )
+# ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
@@ -283,7 +280,7 @@ latex_documents = [
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
-man_pages = [(master_doc, 'proxybroker', 'ProxyBroker Documentation', [author], 1)]
+man_pages = [(master_doc, 'proxyfinder', 'ProxyFinder Documentation', [author], 1)]
 
 # If true, show URL addresses after external links.
 # man_show_urls = False
@@ -297,10 +294,10 @@ man_pages = [(master_doc, 'proxybroker', 'ProxyBroker Documentation', [author], 
 texinfo_documents = [
     (
         master_doc,
-        'proxybroker',
-        'ProxyBroker Documentation',
+        'proxyfinder',
+        'ProxyFinder Documentation',
         author,
-        'ProxyBroker',
+        'ProxyFinder',
         'One line description of project.',
         'Miscellaneous',
     )

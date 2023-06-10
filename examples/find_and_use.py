@@ -9,8 +9,8 @@ from urllib.parse import urlparse
 
 import aiohttp
 
-from proxybroker import Broker, ProxyPool
-from proxybroker.errors import NoProxyError
+from proxyfinder import Broker, ProxyPool
+from proxyfinder.errors import NoProxyError
 
 
 async def fetch(url, proxy_pool, timeout, loop):

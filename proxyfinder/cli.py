@@ -1,5 +1,3 @@
-"""CLI."""
-
 import argparse
 import asyncio
 import json

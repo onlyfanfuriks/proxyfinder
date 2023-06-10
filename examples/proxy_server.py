@@ -5,7 +5,7 @@ import asyncio
 
 import aiohttp
 
-from proxybroker import Broker
+from proxyfinder import Broker
 
 
 async def fetch(url, proxy_url):

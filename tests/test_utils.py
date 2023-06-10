@@ -1,7 +1,7 @@
 import pytest
 
-from proxybroker.errors import BadStatusLine
-from proxybroker.utils import (
+from proxyfinder.errors import BadStatusLine
+from proxyfinder.utils import (
     get_all_ip,
     get_status_code,
     parse_headers,
