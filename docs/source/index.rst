@@ -163,6 +163,9 @@ Contents:
    api
    examples
    changelog
+   modules
+   proxyfinder.data
+   proxyfinder
 
 
 Indices and tables
