@@ -3,7 +3,7 @@ API Reference
 =============
 
 
-.. _proxybroker-api-broker:
+.. _proxyfinder-api-broker:
 
 Broker
 ------
@@ -12,7 +12,7 @@ Broker
     :members: grab, find, serve, stop, show_stats
 
 
-.. _proxybroker-api-proxy:
+.. _proxyfinder-api-proxy:
 
 Proxy
 -----
@@ -22,7 +22,7 @@ Proxy
     :member-order: groupwise
 
 
-.. _proxybroker-api-provider:
+.. _proxyfinder-api-provider:
 
 Provider
 --------

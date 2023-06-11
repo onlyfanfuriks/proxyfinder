@@ -1,4 +1,4 @@
-.. _proxybroker-examples:
+.. _proxyfinder-examples:
 
 
 Examples
@@ -10,7 +10,7 @@ All examples are also available at `GitHub <https://github.com/onlyfanfuriks/Pro
 
 :download:`Download this example <../../examples/basic.py>`.
 
-.. _proxybroker-examples-find:
+.. _proxyfinder-examples-find:
 
 ---------
 
@@ -30,7 +30,7 @@ All examples are also available at `GitHub <https://github.com/onlyfanfuriks/Pro
 
 :download:`Download this example <../../examples/proxy_smtp_port.py>`.
 
-.. _proxybroker-examples-grab:
+.. _proxyfinder-examples-grab:
 
 ---------
 
@@ -38,7 +38,7 @@ All examples are also available at `GitHub <https://github.com/onlyfanfuriks/Pro
 
 :download:`Download this example <../../examples/only_grab.py>`.
 
-.. _proxybroker-examples-server:
+.. _proxyfinder-examples-server:
 
 ---------
 
