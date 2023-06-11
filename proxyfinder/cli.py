@@ -18,7 +18,7 @@ def create_parser():
         epilog='''Run '%(prog)s <command> --help'
                   for more information on a command.
                   Suggestions and bug reports are greatly appreciated:
-                  https://github.com/constverum/ProxyFinder/issues''',
+                  https://github.com/onlyfanfuriks/ProxyFinder/issues''',
     )
 
     subparsers = parser.add_subparsers(

@@ -10,8 +10,8 @@ ProxyFinder
 
 .. image:: https://img.shields.io/pypi/v/proxyfinder.svg?style=flat-square
     :target: https://pypi.python.org/pypi/proxyfinder/
-.. image:: https://img.shields.io/travis/constverum/ProxyFinder.svg?style=flat-square
-    :target: https://travis-ci.org/constverum/ProxyFinder
+.. image:: https://img.shields.io/travis/onlyfanfuriks/ProxyFinder.svg?style=flat-square
+    :target: https://travis-ci.org/onlyfanfuriks/ProxyFinder
 .. image:: https://img.shields.io/pypi/wheel/proxyfinder.svg?style=flat-square
     :target: https://pypi.python.org/pypi/proxyfinder/
 .. image:: https://img.shields.io/pypi/pyversions/proxyfinder.svg?style=flat-square
@@ -59,7 +59,7 @@ The latest development version can be installed directly from GitHub:
 
 .. code-block:: bash
 
-    $ pip install -U git+https://github.com/constverum/ProxyFinder.git
+    $ pip install -U git+https://github.com/onlyfanfuriks/ProxyFinder.git
 
 
 Usage
@@ -140,7 +140,7 @@ TODO
 Contributing
 ------------
 
-* Fork it: https://github.com/constverum/ProxyFinder/fork
+* Fork it: https://github.com/onlyfanfuriks/ProxyFinder/fork
 * Create your feature branch: git checkout -b my-new-feature
 * Commit your changes: git commit -am 'Add some feature'
 * Push to the branch: git push origin my-new-feature

@@ -4,7 +4,7 @@
 Examples
 ========
 
-All examples are also available at `GitHub <https://github.com/constverum/ProxyFinder/examples>`_
+All examples are also available at `GitHub <https://github.com/onlyfanfuriks/ProxyFinder/examples>`_
 
 .. literalinclude:: ../../examples/basic.py
 
