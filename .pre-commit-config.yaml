@@ -19,7 +19,7 @@ repos:
             -   id: flake8
                 args: [--config=setup.cfg, --ignore=E501]
     -   repo: https://github.com/psf/black
-        rev: stable
+        rev: 23.3.0
         hooks:
             -   id: black
                 name: black
@@ -31,17 +31,17 @@ repos:
                     -   -v
                     -   -l 88
     -   repo: https://github.com/asottile/seed-isort-config
-        rev: v2.1.0
+        rev: v2.2.0
         hooks:
             -   id: seed-isort-config
     -   repo: https://github.com/pre-commit/mirrors-isort
-        rev: v4.3.21
+        rev: v5.10.1
         hooks:
             -   id: isort
                 args:
                     -   -rc
     -   repo: https://github.com/PyCQA/pydocstyle
-        rev: 5.0.2
+        rev: 6.3.0
         hooks:
             -   id: pydocstyle
                 args: [--select=D105]
